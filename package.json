@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "ngbase",
+  "version": "0.1.0",
+  "description": "base angular 2 project in vagrant environment",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:daveham/ngbase.git"
+  },
+  "author": "daveham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daveham/ngbase/issues"
+  }
+}
