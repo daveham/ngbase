@@ -10,7 +10,7 @@ that I use, especially node and javascript development tools.
 This setup installs frameworks and libraries for Angular projects.
 I have a similar setup for React projects.
 
-###npm
+### npm
 The provisioning script has special handling for setting up npm with
 an alternate target folder for installing global packages. The setup
 follows one of the strategies recommended in 
@@ -19,7 +19,7 @@ After setting up the alternate folder for global npm packages, a
 child script (bootstrap-npm.sh) is invoked to execute as the
 vagrant user to perform the global installs.
 
-###Unison
+### Unison
 This configuration uses [Unison](https://www.cis.upenn.edu/~bcpierce/unison/) for file synchronization between
 the host and the virtual machine. This is my preferred file sync
 technique when working with vagrant. It provides very good
@@ -31,12 +31,12 @@ of OCaml, compiled into Unison must match.
 There is a script (setup-unison.sh) that will create a unison profile
 that can be used to launch file synchronization.
 
-###Firewall
+### Firewall
 The Vagrant file and the provisioning script include coordinated
 configuration of firewalls. This includes ports for HTTP as well as
 typical ports used when developing with node, including debug ports.
 
-###Usage
+### Usage
 I use this within [WebStorm](https://www.jetbrains.com/webstorm/), leveraging
 its built-in [support for vagrant](https://www.jetbrains.com/help/webstorm/vagrant-working-with-reproducible-development-environments.html).
 However, you can use it with just a few terminal windows.
@@ -57,7 +57,7 @@ work with source code (edit, lint, git, etc) on the host. And, you build
 and execute (gulp, npm install, node, nodemon, etc) in
 the virtual machine.
 
-####WebStorm
+#### WebStorm
 To use with [WebStorm](https://www.jetbrains.com/webstorm/):
 
  * I use the **Tools/Vagrant/Up** menu to bring up the virtual machine.
